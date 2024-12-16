@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Iceland&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    .user-form-container {
+    /* max-width: 600px; */
+    margin-left: 250px auto;
+    padding: 20px;
+    /* background-color: aliceblue; */
+    background-image: url('../assets/back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+
+
+  .card {
+    background-color: transparent; /* Set the background to transparent */
+    border: none; /* Remove the default border */
+    box-shadow: none; /* Remove any box shadow if present */
+  }
+  
+  .card form {
+    background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background for the form */
+    padding: 20px;
+    border-radius: 8px; /* Optional: Add some border radius for smooth corners */
+  }
+  
+  .card .login-link {
+    color: #333;
+  }
+  
+  .card .error {
+    color: red;
+  }
+  
+
+  
+  .head2 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .xyz{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 13px;
+    font-weight: 100;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="date"] {
+    padding: 7px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: rgba(0, 255, 255, 0.33);
+    color: rgb(0, 0, 0);
+    border: none;
+    /* border-radius: 8px; */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #6fe600;
+  }
+  
+  /* Style the logo image */
+.registerImg {
+  width: 50px; /* Adjust width to make it small */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.registerImg:hover {
+  animation: animate__flipanimate__rotateIn 1s ease-in-out;
+}
+
+.submitUser{
+  width: 100px; /* Adjust width to make it small */
+  height: auto; 
+}
+.submitUser:hover{
+  animation: animate__flipanimate__pulse 1s ease-in-out;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.head2{
+  color: black;
+  font-family: 'Iceland', sans-serif; /* Choose Poppins or any other imported font */
+  font-weight: 400;
+  font-size: 50px;
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the columns */
+}
+
+.form-column {
+  width: 80%; /* Each column takes up 48% of the row's width */
+}
+
+.form-column input {
+  width: 100%; /* Ensures the input fields take up the full width of the column */
+  margin-bottom: 15px; /* Adds space between inputs */
+}
+
+

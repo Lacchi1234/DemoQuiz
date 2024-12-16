@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Iceland&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color:white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px; /* Space between images */
+  margin-bottom: 20px;
+}
+
+.image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%; /* Adjust width to fit both images */
+  text-align: center;
+}
+
+.side-image {
+  width: 100%;
+  max-width: 350px; /* Limit max size of the image */
+  height: auto;
+  border-radius: 8px;
+  transition: all 0.3s ease; /* Smooth transition for scaling */
+}
+
+.side-image:hover {
+  animation: animate__flipanimate__rotateIn 1s ease-in-out;
+}
+
+.head1 {
+  color: black;
+  font-family: 'Iceland', sans-serif;
+  font-weight: 200;
+  margin-top: 10px;
+  font-size: 4rem; /* Adjust font size */
+}
+
+.head2 {
+  color: black;
+  font-family: 'Iceland', sans-serif;
+  font-weight: 200;
+  margin-top: 10px;
+  font-size: 1.5rem; /* Adjust font size */
+}
+
+/* Center and align the logo with the heading */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.questImg {
+  width: 80px;
+  height: auto;
+  animation: animate__heartBeat 4s ease-in-out infinite;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: row; /* Keep images in row */
+    justify-content: center; /* Center align images */
+    gap: 30px;
+  }
+
+  .side-image {
+    width: 80%; /* Adjust image size on smaller screens */
+    max-width: 250px; /* Set max width for smaller screens */
+  }
+
+  .head1 {
+    font-size: 3rem; /* Reduce font size for smaller screens */
+  }
+
+  .head2 {
+    font-size: 1.5rem; /* Adjust font size of 'Admin' and 'User' text */
+  }
+}
+
+@media (max-width: 576px) {
+  .head1 {
+    font-size: 1.8rem; /* Further reduce font size on very small screens */
+  }
+
+  .head2 {
+    font-size: 0.5rem; /* Reduce font size for 'Admin' and 'User' text on very small screens */
+  }
+
+  .side-image {
+    width: 100%; /* Ensure full width scaling on very small screens */
+  }
+}

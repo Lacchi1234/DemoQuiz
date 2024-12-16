@@ -1,0 +1,262 @@
+
+  .quiz-container{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh; /* Ensures it covers at least the full viewport height */
+display: flex;
+  }
+
+  .heading-txt {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #444;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  /* Question Section */
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  #question-number {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  #question-txt {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  
+  .option-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .option-btn {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .option-btn:hover {
+    background-color: #d4d4d4;
+  }
+  
+  .option-btn.checked {
+    background-color: #b3e5fc;
+    color: #fff;
+  }
+  
+  #next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #next-button:hover {
+    background-color: #45a049;
+  }
+  
+  .show-score {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .show-score span {
+    font-weight: bold;
+    color: #4caf50;
+  }
+.logoImg {
+    width: 100px; 
+    height: auto; 
+  }
+  
+  .logoImg:hover {
+    animation: animate__flipanimate__rotateIn 1s ease-in-out;
+  }
+  .logo-container{
+    margin-top: 0px;
+  }
+    .quiz-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+}
+
+.main-content {
+  width: 60%;
+  margin-left: 70px;
+  margin-right: 100px;
+
+}
+
+.side-panel {
+  width: 40%;
+  border-left: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.question-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.question-number {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.question-number.attended {
+  background-color: green;
+}
+
+.question-number.current {
+  border: 3px solid rgb(234, 255, 0);
+}
+
+.question-number.not-attended {
+  background-color: red;
+}
+.question-number.reviewed {
+  background-color: orange;
+}
+
+
+#next-button,
+#prev-button,
+#review-button,
+#submit-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #171979; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+#next-button:hover,
+#prev-button:hover,
+#review-button:hover,
+#submit-button:hover {
+  background-color: #1a5267; 
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 150px;; 
+}
+button.active {
+  background-color: #4caf50; 
+  color: white; 
+}
+
+.heading-txt{
+  color: black;
+  font-family: 'Iceland', sans-serif; 
+  font-weight: 400;
+  font-size: 50px;
+}
+.question-image {
+  max-width: 30%; 
+  height: auto;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+.timer{
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.timer-red {
+  color: red;
+  font-weight: bold;
+}
+.hour{
+  width: 50px;
+  height: auto;
+}
+
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.sections button {
+  font-size: 0.9rem;  /* Smaller font size for the buttons */
+  padding: 6px 12px;  /* Reduce padding to make the buttons smaller */
+  margin-bottom: 10px; /* Add some spacing between buttons */
+}
+
+@media (max-width: 767px) {
+  .quiz-container {
+    flex-direction: column;
+  }
+  .col-md-3 {
+    width: 100%;
+    max-width: 150px; /* Reduce the width of the left panel on smaller screens */
+  }
+  .col-md-6 {
+    width: 100%;
+  }
+}
+.current {
+  border: 2px solid #ffae00; /* Blue outline */
+  box-shadow: 0 0 10px rgb(217, 255, 0); /* Subtle glow */
+  font-weight: bold; /* Make it stand out */
+  background-color: #e9f5ff; /* Light background */
+  color: #ffffff; /* Text color matching outline */
+}
+
+
+
+
+
+

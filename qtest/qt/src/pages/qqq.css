@@ -1,0 +1,152 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+
+.fullQqq {
+  background-color: #121212;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.containerQqq {
+  background-color: #121212;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textWhiteQqqmain {
+  color: white !important;
+  font-family: 'Iceland', sans-serif; 
+  font-size: 50px;
+}
+.textWhiteQqq {
+  color: white !important;
+  font-family: 'Iceland', sans-serif; 
+  font-size: 20px;
+}
+
+textarea.formControlQqq {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+textarea.formControlQqq::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+textarea.formControlQqq:focus {
+  outline: none;
+  border-color: #686d31;
+  box-shadow: 0 0 5px rgba(104, 109, 49, 0.6);
+}
+
+.cardQqq {
+  border: 1px solid #555;
+  background: #1c1c1c;
+  color: white;
+  width: 100%;
+  margin-top: 1rem;
+  margin-left: 0%;
+
+}
+
+.cardBodyQqq {
+  padding: 1rem;
+  width: 100%;
+  margin-left: 0%;
+}
+
+.btnSuccessQqq {
+  background-color: #686d31;
+  border: none;
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+.btnSuccessQqq:hover {
+  background-color: #848a47;
+}
+
+.formCheckInputQqq {
+  margin-right: 10px;
+}
+
+.placeholderWhiteQqq::placeholder {
+  color: white !important;
+}
+.form-check-input {
+  margin-right: 10px;
+}
+.formCheckQqq {
+  align-items: center;
+  margin-bottom: 10px; /* Space between the options */
+}
+
+.formCheckLabelQqq {
+  margin-left: 8px; /* Adjust label position relative to the radio button */
+}
+
+.formCheckInputQqq {
+  margin-right: 10px; /* Space between radio button and label */
+}
+.logout-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: #686d31;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background-color: #848a47;
+}
+
+.imgNavigateToOptions {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer; /* Optional: to indicate that it's clickable */
+  width: 40px; /* You can adjust the size of the image */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Custom hover effect for the "Add Questions" text */
+.textWhiteQqqmain {
+  color: white; /* Default text color */
+  transition: color 0.3s, text-shadow 0.3s; /* Smooth transition for color and shadow */
+}
+
+.textWhiteQqqmain:hover {
+  color: #ffdf33; /* Change text color to yellow */
+  text-shadow: 0 0 10px rgba(255, 223, 51, 0.8), 0 0 20px rgba(255, 223, 51, 0.8); /* Glowing effect */
+}
+.custom-dropdown {
+  background-color: rgba(75, 74, 74, 0.889) !important; /* Set grey background */
+  color: white; /* Ensure text is readable */
+}
+
+.custom-dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.25); /* Bootstrap-like focus effect */
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Iceland&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.containerAd{
+background-image: url('../assets/black.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; 
+    width: 100vw;  
+    margin: 0;
+    }   
+    
+.admin-heading{
+    color: rgb(0, 0, 0);
+    font-family: 'Iceland', sans-serif; /* Choose Poppins or any other imported font */
+    font-weight: 400;
+    font-size: 80px;
+    margin-top: 10px;
+    letter-spacing: 8px;
+    /* text-transform: uppercase; */
+    width: 100%;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(78, 78, 78, 0.21)); */
+    /* line-height: 0.80em; */
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%,90.1%,92%
+    {
+        color: #000000e5;
+        box-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65.1%, 80.1%, 90%, 92.1%, 100%{
+        color: #ffffff;
+        box-shadow: 0 0  10px #ffffff,
+                0 0  20px #ffffff,
+                0 0  40px #ffffff,
+                0 0  80px #ffffff,
+                0 0  160px #ffffff,
+    }
+}
+.bg-secondary {
+    background-color: #6c757d !important; /* Set your preferred grey color */
+    color: #fff; /* Ensure the text is visible on the grey background */
+    border: 1px solid #6c757d; /* Match the border color with the background */
+  }
+  
+  .bg-secondary:focus {
+    background-color: #6c757d !important; /* Maintain the grey background when focused */
+    color: #fff; /* Ensure text remains visible */
+    outline: none; /* Remove the default browser outline if needed */
+    box-shadow: none; /* Prevent the default focus glow */
+  }
+  input.form-controlP {
+    color: white; /* Set text color to white */
+    background-color: #6c757d; /* Keep the background secondary */
+    border: 1px solid #ced4da; /* Define a border color */
+    padding: 10px; /* Add padding for better appearance */
+    border-radius: 4px; /* Optional: Rounded corners */
+  }
+  .placeholder-white::placeholder {
+    color: rgb(255, 255, 255); /* White color with slight opacity for placeholders */
+  }
+  /* Custom input fields with yellow border shadow */
+.form-controlP {
+  border-radius: 5px;
+  padding: 10px;
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow */
+}
+
+.form-controlP:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 10px 2px rgba(255, 223, 51, 0.8); /* Yellow border shadow */
+  border: 1px solid #ffdf33; /* Add yellow border */
+}
