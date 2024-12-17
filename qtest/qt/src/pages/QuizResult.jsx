@@ -15,15 +15,16 @@ const QuizResult = ({
 }) => {
   const navigate = useNavigate();
 
-  // const handleFinish = () => {
-  //   navigate('/thankz');
-  // };
-
   const handleFinish = () => {
-    // Set the session flag to mark quiz completion
-    sessionStorage.setItem('quizCompleted', 'true');
-    navigate('/home'); // Redirect to the home page
-};
+    const isQuizCompleted = sessionStorage.getItem('quizCompleted') === 'true'; // Check if the quiz is completed
+  
+    if (isQuizCompleted) {
+      navigate('/thankz'); // Navigate to the thank you page if the quiz is completed
+    } else {
+      sessionStorage.setItem('quizCompleted', 'true'); // Mark the quiz as completed
+      navigate('/thankz'); // Redirect to the home page
+    }
+  };
 
   return (
     <div className="quiz-result">
